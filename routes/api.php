@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('food_menu_category',[App\Http\Controllers\FoodMenuController::class,'FoodCategory']);
 Route::post('user_login',[App\Http\Controllers\UserLoginController::class,'UserLogin']);
 Route::get('food_category',[App\Http\Controllers\FoodCategoryController::class,'FoodCategory']);
-
+Route::get('food_order',[App\Http\Controllers\OrderController::class,'Order']);
+Route::post('food_sale',[App\Http\Controllers\SaleController::class,'saleStore']);

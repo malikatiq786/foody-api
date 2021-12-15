@@ -17,7 +17,7 @@ class UserLoginController extends Controller
         if($userLogin){
             if(md5($pass) == $userLogin->password){
                 $userLoginData=User::all();
-                //$userLoginData=UserLogin::where('del_status', 'Offline')->get();
+                
                 return response()->json([
                     'status'=>200,
                     'message'=>'Success',
