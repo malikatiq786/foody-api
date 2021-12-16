@@ -9,6 +9,14 @@ use Hash;
 
 class OrderController extends Controller
 {
+
+    public function StorOrder(Request $request){
+       // $order=new Order;
+        
+    }
+
+
+
     public function Order(){
         $order=Order::all();
         return response()->json([

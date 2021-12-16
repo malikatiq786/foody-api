@@ -22,4 +22,6 @@ Route::get('food_menu_category',[App\Http\Controllers\FoodMenuController::class,
 Route::post('user_login',[App\Http\Controllers\UserLoginController::class,'UserLogin']);
 Route::get('food_category',[App\Http\Controllers\FoodCategoryController::class,'FoodCategory']);
 Route::get('food_order',[App\Http\Controllers\OrderController::class,'Order']);
+Route::post('create_order',[App\Http\Controllers\OrderController::class,'StorOrder']);
 Route::post('food_sale',[App\Http\Controllers\SaleController::class,'saleStore']);
+Route::post('user_address',[App\Http\Controllers\UserAddressController::class,'UserAdress']);
